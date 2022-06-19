@@ -20,7 +20,7 @@ pipeline{
             steps {
 
                 withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn test'
+                    sh 'mvn -f jenkins-pipeline-cucumber-example-feature-test-pipeline-cucumber/pom.xml test'
 
                 }
 
